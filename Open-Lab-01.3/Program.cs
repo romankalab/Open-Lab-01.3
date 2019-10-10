@@ -7,15 +7,19 @@ namespace Open_Lab_01._1
     {
         public static void Main()
         {
-            int number;
-
             Console.WriteLine("Enter your number: ");
 
-            number = Convert.ToInt32(Console.ReadLine());
+            int number = Convert.ToInt32(Console.ReadLine());
 
-            int number1 = number + 1;
+            int result = AddOne(number);
 
-            Console.WriteLine($"This is the result: {number1}");
+            Console.WriteLine($"This is the result: {result}");
+        }
+
+        private static int AddOne(int number)
+        {
+            number = number + 1;
+            return number;
         }
     }
 }
